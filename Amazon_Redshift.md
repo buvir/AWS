@@ -17,6 +17,17 @@ Amazon Redshift is a fully managed, cloud-based **data warehouse** that allows y
 
 ---
 
+📂 Folder Structure for GitHub
+Amazon-Redshift-Notes/
+│── Amazon_Redshift.md
+│── README.md   (optional overview)
+│── Amazon_Redshift_screenshots/
+      ├── redshift_iam_user_creation.png
+      ├── redshift_iam_user_permissions.png
+      ├── redshift_cluster.png
+      ├── redshift_snapshot.png
+
+
 ## 📌 When You Need Big Data
 
 Questions to ask before choosing Redshift:  
@@ -74,7 +85,39 @@ Steps:
 4. Set **Admin username/password**  
 5. Wait until cluster status = `Available`  
 
-![Screenshot: Cluster Creation](screenshots/cluster_creation.png)
+## 📌 IAM User Creation
+
+When setting up Redshift, create an IAM user with appropriate permissions.
+
+![IAM User Creation](Amazon_Redshift_screenshots/redshift_iam_user_creation.png)
+
+---
+
+## 📌 IAM Permissions
+
+Attach the following policies:  
+- `AmazonRedshiftAllCommandsFullAccess`  
+- `AmazonS3ReadOnlyAccess`  
+
+![IAM User Permissions](Amazon_Redshift_screenshots/redshift_iam_user_permissions.png)
+
+---
+
+## 📌 Creating a Redshift Cluster
+
+Once the IAM role is ready, create the Redshift cluster.
+
+![Redshift Cluster](Amazon_Redshift_screenshots/redshift_cluster.png)
+
+---
+
+## 📌 Snapshots & Backups
+
+Redshift supports automated & manual snapshots for backup and recovery.
+
+![Redshift Snapshot](Amazon_Redshift_screenshots/redshift_snapshot.png)
+
+
 
 ---
 
@@ -101,7 +144,7 @@ FROM sales;
 
 ➡️ Expected: ~170,000 records in the sample dataset.  
 
-![Screenshot: Query Editor](screenshots/query_editor.png)
+
 
 ---
 
@@ -135,7 +178,7 @@ DELIMITER ','
 IGNOREHEADER 1;
 ```
 
-![Screenshot: Data Load](screenshots/data_load.png)
+
 
 ---
 
