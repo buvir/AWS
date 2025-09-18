@@ -89,7 +89,7 @@ Steps:
 
 When setting up Redshift, create an IAM user with appropriate permissions.
 
-![IAM User Creation](Amazon_Redshift_screenshots/redshift_iam_user_creation.png)
+![IAM User Creation](/redshift_iam_user_creation.png)
 
 ---
 
@@ -99,7 +99,7 @@ Attach the following policies:
 - `AmazonRedshiftAllCommandsFullAccess`  
 - `AmazonS3ReadOnlyAccess`  
 
-![IAM User Permissions](Amazon_Redshift_screenshots/redshift_iam_user_permissions.png)
+![IAM User Permissions](/redshift_iam_user_permissions.png)
 
 ---
 
@@ -107,7 +107,7 @@ Attach the following policies:
 
 Once the IAM role is ready, create the Redshift cluster.
 
-![Redshift Cluster](Amazon_Redshift_screenshots/redshift_cluster.png)
+![Redshift Cluster](/redshift_cluster.png)
 
 ---
 
@@ -115,7 +115,7 @@ Once the IAM role is ready, create the Redshift cluster.
 
 Redshift supports automated & manual snapshots for backup and recovery.
 
-![Redshift Snapshot](Amazon_Redshift_screenshots/redshift_snapshot.png)
+![Redshift Snapshot](/redshift_snapshot.png)
 
 
 
