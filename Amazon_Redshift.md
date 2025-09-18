@@ -18,10 +18,13 @@ Amazon Redshift is a fully managed, cloud-based **data warehouse** that allows y
 ---
 
 📂 Folder Structure for GitHub
+
 Amazon-Redshift-Notes/
 │── Amazon_Redshift.md
-│── README.md   (optional overview)
-│── Amazon_Redshift_screenshots/
+
+│── README.md   ( overview)
+
+
       ├── redshift_iam_user_creation.png
       ├── redshift_iam_user_permissions.png
       ├── redshift_cluster.png
@@ -201,7 +204,6 @@ IGNOREHEADER 1;
 
 ## 📌 References
 
-- [AWS Redshift Documentation](https://docs.aws.amazon.com/redshift/)  
-- Book: *Designing Data-Intensive Applications* (recommended by mentor)  
+- [AWS Redshift Documentation](https://docs.aws.amazon.com/redshift/)   
 
 ---
